@@ -12,15 +12,8 @@ disqus_shortname:   mangansskl
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           nsskltranslations
-instagram:          default
-github:             nsskltranslation
-mangadex:           9999
-discord:            syJsXbt
 
 # Other
-background_image:   /images/bg.jpg
 timezone: "Asia/Jakarta"
 
 defaults:
@@ -28,12 +21,12 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: "/:title/"
+    permalink: "/baca/:title/"
     layout: post
     author:
 
 # Jekyll
-permalink:          /:title/
+permalink:          /baca/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -49,10 +42,8 @@ sass:
 
 # Gems
 plugins:
-  - jekyll-mentions
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
+  - jekyll-redirect-from
   - jekyll-seo-tag
 
 jekyll-mentions:

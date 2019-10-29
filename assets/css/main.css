@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: #fff;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background-color: #212931!important;
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +47,35 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+	text-align: center;
+	padding: 20px 50px;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: auto auto 20px auto;
+	font-weight: bold;
+	padding: 10px 20px;
+	display: inline-block;
+	background-color: #33475a;
+}
+
+.reader-image {
+	width: 75%;
+	height: 75%;
+    display: inline-block
+}
+
+@media (max-width: 850px) {
+    .reader-image { 
+		width: 100%;
+		height: 100%;
+	}
 }

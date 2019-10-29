@@ -5,16 +5,14 @@
 	</head>
 	<body>
         <div id="wrapper">
+            <h1>{{ page.title }}</h1>
             <div id='reader'>
-                <script type="text/javascript" src="assets/js/nssklparse.js"></script>
-                <script type="text/javascript">
-                    nssklParse("{{ page.mangadex_id }}");
-                </script>
-                <div id='reader-loading'>
-                    <img id='reader-loading' width="40" height="40" src='assets/img/naoload.gif'>
-                    <span>Memproses manga...</span>
-                </div>
+                {% for im in page.chapter_pic %}
+                <img class="reader-image" src="{{ im }}">
+                {% endfor %}
             </div>
+            <br>
+            {% include disqus.html %}
         </div>
     </body>
 </html>
