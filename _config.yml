@@ -1,0 +1,62 @@
+# Site
+title:              "NSSKL"
+subdivisi:          "Manga Reader"
+bio:                'Ngemanga Suka-Suka Kami, Lah!'
+description:        "Ngemanga Suka-Suka Kami, Lah!"
+locale:             id_ID
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Comments
+disqus_shortname:   mangansskl
+
+# Social
+analytics-id:       "default"
+twitter:            default
+facebook:           nsskltranslations
+instagram:          default
+github:             nsskltranslation
+mangadex:           9999
+discord:            syJsXbt
+
+# Other
+background_image:   /images/bg.jpg
+timezone: "Asia/Jakarta"
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/:title/"
+    layout: post
+    author:
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Gems
+plugins:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-seo-tag
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, _templates]
